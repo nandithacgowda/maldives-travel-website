@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maldives</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    
+    <style>
+      .zoom:hover
+      {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+
+        
+      }
+    </style>
+  </head>
+<body>
+  
+      <nav class="navbar navbar-danger navbar-light">
+    <a class="navbar-brand" href="#">
+      <img src="data:image/png;base64,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" width="30" height="30" class="d-inline-block align-top" alt="">
+      MALDIVES
+    </a>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./Register.html">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./login.html">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Tours
+        </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">You And Me By Cacoon</a>
+        <a class="dropdown-item" href="#">Daros Maldives</a>
+        <a class="dropdown-item" href="#">Lux South Ari Atoll</a>
+      </div>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">24-hour guest services</a>
+        <a class="dropdown-item" href="#">24-hour in-villa dining.</a>
+        <a class="dropdown-item" href="#">Laundry service.</a>
+        <a class="dropdown-item" href="#">Free Wi-Fi Internet.</a>
+        <a class="dropdown-item" href="#">Amilla Maldives Resort</a>
+      </div>
+      <li class="nav-item">
+        <a class="nav-link" href="#Gallery">Gallery</a>
+      </li>
+
+      
+      
+    </ul>
+    </nav>
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images7.alphacoders.com/331/thumb-1920-331512.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="carousel-item">
+          <img src="https://wallpapercave.com/wp/XpDxzYW.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="carousel-item">
+          <img src="https://wallpaperaccess.com/full/1758128.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div> 
+<br/>
+<br/>
+<br/>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 card card-body" style="border-style: none">
+      <img class="zoom" style="width: 100%; height: 100%;" src="https://www.wallpapers13.com/wp-content/uploads/2016/02/Hotel-terrace-chairs-ocean-Maldives-Hd-wallpaper-2560x1440.jpg" alt="">
+      
+    </div>
+    <div class="col-sm-6 card card-body" style="border-style: none;" id="about" >
+      <h1>Maldives</h1>
+      <p class="text-justify mt-4" style="text-indent: 40px;">
+          Home to some of the best beaches in the world, Maldives is a double chain of twenty-six atolls, a group of coral reef islands at the cusp of the Indian Ocean and the Arabian Sea. It is oriented north- south and lies between the Minicoy Island, the southernmost tip of the Lakshadweep Islands, and the Chagos Archipelago to the south. The archipelago consists of around 1200 islands, of which the vast majority of the country’s population of around 300,000 people occupies about 180 islands, tourist resorts are spread over around 100 islands. The rest are largely unoccupied. 
+          Surrounded by crystal clear blue green waters, the islands are a stunning sight for all vacationers. The country, though at the mercy of the perilous sea, has somehow managed to turn itself into a luxury brand built on what was once a group of inhospitable coral islands. And that is quite an achievement by anyone’s standards. Luxurious it may be but the warmth the islands offer to everyone who sets foot here is incomparable. Some of the islands cater exclusively to the rich and mighty, while the others to those who travel on a shoestring budget. Located southwest of both India (600 km) and Sri Lanka (750 km), Maldives is the perfect holiday destination for families, lovers, divers and for those who are looking to get re-acquainted with nature. The first settlers in the islands were the Dravidians. From the mid-16th century till 1965, the country was under various colonial rules (Portuguese, Dutch and the British). Maldives had its first direct presidential elections in 2008. With a mélange in ethnicities there is an obvious diversity in food, customs and traditions, though the main influence is from India and Sri Lanka. 
+          Male is the capital of the Maldives and its main city. The various islands in this country are distinctive in their own way. Theyve become popular with travellers from the ‘70s when the first resorts on the island started being built. Since then, there has been no looking back. 
+          The Indian Ocean tsunami of 2004 though was a time of reckoning for these tiny nations, revealing how vulnerable it was to the fury of the ocean, on which its economy is dependent. Though the waves were less than five meters in height, only nine of the country’s inhabited islands escaped flooding. Six islands were completely destroyed and 57 faced severe damage.
+      </p>
+    </div>
+  </div>
+  <br><br>
+  <div id="gallery" class="container" >
+      <h1>Tours</h1>
+  <div class="card-deck">
+      <div class="card" style="border-style: none">
+        <img class="zoom" src="https://www.jasmineholidays.co.uk/files/img_cache/634_320_29772_1_1_Screen%20Shot%202019-02-16%20at%2015.29.39.png" class="card-img-top" alt="Tour1">
+        <div class="card-body">
+          <h3 class="card-title">You And Me By Cacoon</h3>
+          <p class="card-text text-justify" style="text-indent: 40px;">There is a vast range of activities you can indulge in at an additional cost, like a personal guided tour with a marine bioligist where you shall  A large variety of water-sports, excursions and further activities are available.spot Hawksbill turtles swimming right next to you, you could also go for a romantic sunset cruise with champagne and canapes If you wish to go for Scuba Diving, this resort is one of the best you can choose from. White Tip and Gray Reef sharks, Hawksbill turtles, Dog Tooth Tuna, Napoleon fish, schools of Blue Stripe snappers, Bat fish and Fusilier fish, Barracuda and Eagle and Manta rays have all been spotted at Maldivian Dive Sites just 15 minutes off the island. 
+            Overnight at the resort after a well-spent day.</p>
+            
+          
+        </div>
+      </div>
+      <div class="card" style="border-style: none">
+        <img class="zoom" src="https://www.jasmineholidays.co.uk/files/img_cache/634_320_29775_1_1_Screen%20Shot%202019-02-16%20at%2015.29.52.png" class="card-img-top" alt="Tour2">
+        <div class="card-body">
+          <h3 class="card-title">Daros Maldives</h3>
+          <p class="card-text text-justify" style="text-indent: 40px;">Located on a beautiful private island with pristine beaches and lush tropical greenery, Ayada Maldives offers a truly luxurious retreat with a genuine Maldivian style.
+            Ayada Maldives is located in the Gaafu Dhaalu Atoll in the far south of the Maldives.A wide range of restaurants, spacious villas with private infinity pools and the multi-award winning AySpa make Ayada Maldives an excellent choice for those looking for a luxury hideaway in the Maldives.A large variety of water-sports, excursions and further activities are available.A large variety of water-sports, excursions and further activities are available. 
+            A large variety of water-sports, excursions and further activities are available.</p>
+           
+          
+        </div>
+      </div>
+      <div class="card" style="border-style: none">
+        <img class="zoom" src="https://www.jasmineholidays.co.uk/files/img_cache/634_320_29773_1_1_Screen%20Shot%202019-02-16%20at%2015.29.57.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Lux South Ari Atoll</h3>
+          <p class="card-text text-justify" style="text-indent: 40px;">Located on a beautiful private island with pristine beaches and lush tropical greenery, Ayada Maldives offers a truly luxurious retreat with a genuine Maldivian style.
+            Ayada Maldives is located in the Gaafu Dhaalu Atoll in the far south of the Maldives.A wide range of restaurants, spacious villas with private infinity pools and the multi-award winning AySpa make Ayada Maldives an excellent choice for those looking for a luxury hideaway in the Maldives.
+            A large variety of water-sports, excursions and further activities are available.A large variety of water-sports, excursions and further activities are available.A large variety of water-sports, excursions and further activities are available.</p>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <!-- Gallery -->
+<div class="row" >
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" id="Gallery">
+    <div class="zoom">
+    <img
+      src="https://c4.wallpaperflare.com/wallpaper/349/610/348/reethi-beach-island-in-the-baia-maldives-reethi-beach-resort-hd-wallpapers-high-definition-1920%C3%971080-wallpaper-preview.jpg
+      "
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+    <div class="zoom">
+    <img
+      src="https://gommts3.mmtcdn.com/htl-imgs/htl-imgs/201711031530115136-8f94519e_z.jpg?&output-quality=75&downsize=910:612&crop=910:612;141,0&output-format=jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+</div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <div class="zoom">
+    <img
+      src="https://interiordesign.net/wp-content/uploads/2021/07/Interior-Design-Verena-Haller-Standard-Hotels-spa-Ro_20.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+    <div class="zoom">
+    <img
+      src="https://wallpaperstock.net/wallpapers/thumbs1/42918hd.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+</div>
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <div class="zoom">
+    <img
+      src="https://wallpapershome.com/images/pages/pic_v/5312.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+    <div class="zoom">
+    <img
+      src="https://www.jetsetter.com//uploads/sites/7/2018/04/uNM6DNQ2-1380x690.jpeg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+</div>
+</div>
+<!-- Gallery -->
+<div class="container">
+  <p class="h2" id="pack">Packages</p>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">No.</th>
+      <th scope="col">Place</th>
+      <th scope="col">Price</th>
+      <th scope="col">No. of Days</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>You And Me By Cacoon</td>
+      <td>25K</td>
+      <td>5days</td>
+      <td>
+        <div>
+          <!-- Button HTML (to Trigger Modal) -->
+          <a href="#mybook" class="h3 trigger-btn" data-toggle="modal"><button class="btn btn-primary">Book Now</button></a>
+        </div>
+        <div id="mybook" class="modal fade">
+          <div class="modal-dialog modal-login">
+              <div class="modal-content">
+                  <div class="modal-header">                
+                      <h4 class="modal-title">BOOKING</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <form action="/examples/actions/confirmation.php" method="post">
+                          <div class="form-group">
+                              <i class="fa fa-user"></i>
+                              <input type="text" class="form-control" placeholder="Name" required="required">
+                          </div>
+                          <div class="form-group">
+                              <i class="fa fa-user"></i>
+                              <input type="Email" class="form-control" placeholder="Email" required="required">
+                          </div>
+                          <div class="form-group">
+                              <i class="fa fa-user"></i>
+                              <input type="Date" id="form3" class="form-label"  required="required">
+                              <label class="form-label" for="form3">Date Of Departure</label>
+                          </div>
+                          <div class="form-group">
+                            <i class="fa fa-user"></i>
+                            <input type="Date" id="form3" class="form-label"  required="required">
+                            <label class="form-label" for="form3">Date Of Arrival</label>
+                        </div>
+                          <div class="form-group">
+                              <i class="fa fa-user"></i>
+                              <input type="text" class="form-control" placeholder="Govt.Id proof" required="required">
+                          </div>
+                          <div class="form-group">
+                              <i class="fa fa-lock"></i>
+                              <input type="password" class="form-control" placeholder="Login Password" required="required">                 
+                          </div>
+                          <div class="form-group">
+                              <input type="submit" class="btn btn-primary btn-block btn-lg" value="Confirm">
+                          </div>
+                      </form>               
+                      
+                  </div>
+                  
+              </div>
+          </div>
+        </div></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>LEH LADAKH</td>
+        <td>35K</td>
+        <td>10days</td>
+        <td><div>
+          <!-- Button HTML (to Trigger Modal) -->
+          <a href="#mybook" class="h3 trigger-btn" data-toggle="modal"><button class="btn btn-primary">Book Now</button></a>
+        </div>
+        
+        <!-- Modal HTML -->
+        <div id="mybook" class="modal fade">
+          <div class="modal-dialog modal-login">
+              <div class="modal-content">
+                  <div class="modal-header">                
+                      <h4 class="modal-title">BOOKING</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <form action="/examples/actions/confirmation.php" method="post">
+                          <div class="form-group">
+                              <i class="fa fa-user"></i>
+                              <input type="text" class="form-control" placeholder="Name" required="required">
+                          </div>
+                          <div class="form-group">
+                              <i class="fa fa-user"></i>
+                              <input type="Email" class="form-control" placeholder="Email" required="required">
+                          </div>
+                          <div class="form-group">
+                            <i class="fa fa-user"></i>
+                            <input type="Date" id="form3" class="form-label"  required="required">
+                            <label class="form-label" for="form3">Date Of Departure</label>
+                        </div>
+                        <div class="form-group">
+                          <i class="fa fa-user"></i>
+                          <input type="Date" id="form3" class="form-label"  required="required">
+                          <label class="form-label" for="form3">Date Of Arrival</label>
+                      </div>
+                          <div class="form-group">
+                              <i class="fa fa-user"></i>
+                              <input type="text" class="form-control" placeholder="Govt.Id proof" required="required">
+                          </div>
+                          <div class="form-group">
+                              <i class="fa fa-lock"></i>
+                              <input type="password" class="form-control" placeholder="Login Password" required="required">                 
+                          </div>
+                          <div class="form-group">
+                              <input type="submit" class="btn btn-primary btn-block btn-lg" value="confirn">
+                          </div>
+                      </form>               
+                      
+                  </div>
+                  
+              </div>
+          </div>
+        </div></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>MANALI & LEH LADAKH </td>
+        <td>90K</td>
+        <td>30days</td>
+        <td><div>
+          <!-- Button HTML (to Trigger Modal) -->
+          <a href="#mybook" class="h3 trigger-btn" data-toggle="modal"><button class="btn btn-primary">Book Now</button></a>
+        </div>
+        
+        <!-- Modal HTML -->
+        <div id="mybook" class="modal fade">
+          <div class="modal-dialog modal-login">
+              <div class="modal-content">
+                  <div class="modal-header">                
+                      <h4 class="modal-title">BOOKING</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <form action="/examples/actions/confirmation.php" method="post">
+                          <div class="form-group">
+                              <i class="fa fa-user"></i>
+                              <input type="text" class="form-control" placeholder="Name" required="required">
+                          </div>
+                          <div class="form-group">
+                              <i class="fa fa-user"></i>
+                              <input type="email" class="form-control" placeholder="Email" required="required">
+                          </div>
+                          <div class="form-group">
+                            <i class="fa fa-user"></i>
+                            <input type="Date" id="form3" class="form-label"  required="required">
+                            <label class="form-label" for="form3">Date Of Departure</label>
+                        </div>
+                        <div class="form-group">
+                          <i class="fa fa-user"></i>
+                          <input type="Date" id="form3" class="form-label"  required="required">
+                          <label class="form-label" for="form3">Date Of Arrival</label>
+                      </div>
+                          <div class="form-group">
+                              <i class="fa fa-user"></i>
+                              <input type="text" class="form-control" placeholder="Govt.Id proof" required="required">
+                          </div>
+                          <div class="form-group">
+                              <i class="fa fa-lock"></i>
+                              <input type="password" class="form-control" placeholder="Login Password" required="required">                 
+                          </div>
+                          <div class="form-group">
+                              <input type="submit" class="btn btn-primary btn-block btn-lg" value="Confirm">
+                          </div>
+                      </form>               
+                      
+                  </div>
+                  
+              </div>
+          </div>
+        </div></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br><br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8159086.697555525!2d68.72675886770962!3d3.113473646875811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x24b599bfaafb7bbd%3A0x414509e181956289!2sMaldives!5e0!3m2!1sen!2sin!4v1678698875350!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="footer-basic">
+  <footer>
+      <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+      <ul class="list-inline">
+          <li class="list-inline-item"><a href="./travel.html">Home</a></li>
+          <li class="list-inline-item"><a href="#">Services</a></li>
+          <li class="list-inline-item"><a href="#about">About</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="copyright">Maldives © 2021</p>
+  </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
